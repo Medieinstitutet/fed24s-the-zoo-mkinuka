@@ -1,0 +1,17 @@
+#animals-container {
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.animal-container {
+     width: 20vw;
+   
+}
+
+.img {
+    width: 20vw;
+    height: 20vh;
+}
