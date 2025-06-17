@@ -1,0 +1,23 @@
+.animalInfo-container {
+    width: 80vw;
+    height: auto;
+    background-color: rgb(218, 185, 142);
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.animalInfo-img {
+  width: 400px;    
+  height: 400px;        
+  object-fit: cover;    
+  border-radius: 50%;   
+  display: block;
+}
+
+.long-desc {
+    width: 30vw;
+}
+
+.info-box{
+    width: 60vw;
+}

@@ -1,24 +1,38 @@
 import type { animal } from "../models/animal";
 
-export type Action = {
-  type: ActionTypes;
-  payload: string;
-};
+// export type Action = {
+//   type: ActionType;
+//    payload: number;
+// }
+export enum ActionType {
+  FEED,
+  UPDATIME,
+  HELLO,
+  SET_ANIMALS
+}
 
-export type ActionTypes = "FEED" | "HELLO" | "SET_ANIMALS";
+export type Action =
+  | { type: ActionType.FEED; payload: number }
+  | { type: ActionType.SET_ANIMALS; payload: animal[] }
+  | { type: ActionType.HELLO }
+  | { type: ActionType.UPDATIME };
 
-export const animalReducer = (animals: animal[], action: Action) => {
+export const animalReducer = (animals: animal[], action: Action): animal[] => {
   switch (action.type) {
-    case "FEED":
-      // Implemnt logic for Feed action
-      return animals;
-    case "HELLO":
-      // Implement logic for HELLO action
-      return animals; // or your updated animals array
+    case ActionType.FEED:
+       return animals.map(a =>
+        a.id === action.payload
+          ? { ...a, isFed: true, lastFed: new Date().toISOString() }
+          : a
+      );
 
-    case "SET_ANIMALS":
-    //hello
-    return animals;
+  case ActionType.HELLO:
+  return animals;   
+
+  case ActionType.SET_ANIMALS:
+  return action.payload;
+
+
     default:
       return animals;
   }

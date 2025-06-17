@@ -1,17 +1,32 @@
 #animals-container {
     width: 80vw;
     display: flex;
-    justify-content: center;
+    justify-content: center; 
     flex-wrap: wrap;
     gap: 2rem;
 }
 
 .animal-container {
-     width: 20vw;
-   
+    width: 20vw;
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem;
+    border-radius: 20px;
 }
 
 .img {
-    width: 20vw;
-    height: 20vh;
+  width: 200px;    
+  height: 200px;        
+  object-fit: cover;    
+  border-radius: 8px;   
+  display: block;
+}
+
+.addInfo {
+  width: 20vw;
+  padding-top: 4rem;
 }
