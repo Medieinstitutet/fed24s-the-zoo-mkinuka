@@ -1,34 +1,18 @@
 @import "tailwindcss";
 
 :root {
-  font-family: Grandslang-roman, sans-serif, system-ui;
-  line-height: 1.5;
+  font-family: 'OliJoSansItalic', cursive;  line-height: 1.5;
   font-weight: 400;
-
-  color-scheme: light dark;
+  margin: 0;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
+  color: black;
 } 
 
 
-/* button {
-  background: #007bff;
-  color: #fff;
-  border: 1px solid #007bff;
-  border-radius: 4px;
-  padding: 0.5em 1em;
-  cursor: pointer;
+body {
+  background-image: url("../src/assets/bakgrund3.jpg");
+  background-size:100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
 }
-button:hover {
-  transition: 1s;
-  background: #0056b3;
-  border-color: #0056b3;
-} */
-
-
-
-
-/* .main-container {
-
-} */

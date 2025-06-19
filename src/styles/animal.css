@@ -1,5 +1,5 @@
 .animalInfo-container {
-    width: 80vw;
+    width: auto;
     height: auto;
     background-color: rgb(218, 185, 142);
     padding: 2rem;
@@ -7,10 +7,10 @@
 }
 
 .animalInfo-img {
-  width: 400px;    
-  height: 400px;        
+  width: 25rem;    
+  height: auto;        
   object-fit: cover;    
-  border-radius: 50%;   
+  border-radius: 14px;   
   display: block;
 }
 
@@ -20,4 +20,9 @@
 
 .info-box{
     width: 60vw;
+}
+
+.addInfo {
+  width: 20vw;
+  /* padding-top: 4rem; */
 }

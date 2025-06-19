@@ -1,9 +1,5 @@
 import type { animal } from "../models/animal";
 
-// export type Action = {
-//   type: ActionType;
-//    payload: number;
-// }
 export enum ActionType {
   FEED,
   UPDATIME,
@@ -14,8 +10,6 @@ export enum ActionType {
 export type Action =
   | { type: ActionType.FEED; payload: number }
   | { type: ActionType.SET_ANIMALS; payload: animal[] }
-  | { type: ActionType.HELLO }
-  | { type: ActionType.UPDATIME };
 
 export const animalReducer = (animals: animal[], action: Action): animal[] => {
   switch (action.type) {
@@ -25,9 +19,6 @@ export const animalReducer = (animals: animal[], action: Action): animal[] => {
           ? { ...a, isFed: true, lastFed: new Date().toISOString() }
           : a
       );
-
-  case ActionType.HELLO:
-  return animals;   
 
   case ActionType.SET_ANIMALS:
   return action.payload;
