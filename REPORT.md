@@ -55,8 +55,8 @@ Ha roligt, skratta och lär er massor!
 ## 🔍 ESLint-varningar:
 
 
-## 🏆 **Betyg: G**
-📌 **Motivering:** Koden uppfyller kraven för ett godkänt betyg. Det finns routing med React Router, djurdata hämtas och visas, bilder hanteras korrekt vid fel, och Mata-knappen följer de specificerade reglerna. CSS-tekniker används utöver vanlig CSS i form av Tailwind CSS.
+## 🏆 **Betyg: IG**
+📌 **Motivering:** Flera krav, särskilt de som hänför sig till routeranvändning och hantering av kontexter samt reducers är oklara eller obekräftade.
 
 💡 **Förbättringsförslag:**  
-Koden kan förbättras genom att konsolidera och rensa CSS för bättre läsbarhet och underhåll. Flytta även inline-styling, såsom tailwind-klasser, till separate CSS-filer där möjligt. Implementation av användning av Context och Reducers är korrekt, men kan struktureras mer tydligt genom att separera fetch-logik i en service-fil. Felhantering kan förbättras genom att visa användarvänliga meddelanden vid fel istället för enkla konsolutskrifter. Animationsdelen är inte uppfylld, och skulle kunna implementeras för att förbättra användarupplevelsen.
+Lägg till router-funktioner för att växla mellan sidor, säkerställ kontexthantering över props, och använd reducers istället för state där lämpligt. Utveckla också detaljerad funktionalitet för matning av djur och hantering av felaktiga bildlänkar.
